@@ -1,7 +1,6 @@
 import { AppBar, Container, Toolbar, Button, Box } from "@mui/material"
-import { yellow } from '@mui/material/colors';
 import { styled } from '@mui/material/styles';
-import headerIcon from "../../../Assets/images/headerIcon.png"
+import headerIcon from "../../Assets/header/headerIcon.png"
 
 const ResponsiveAppbar = () => {
     const pages = ["Acerca de", "Habitaciones", "Espacios", "Galeria", "Contacto"]
@@ -25,7 +24,7 @@ const ResponsiveAppbar = () => {
             <Container maxWidth="100%">
                 <Toolbar>
                     <Button className="w-72 left-60" href="./">
-                        <img src={headerIcon}></img>
+                        <img src={headerIcon} alt=""></img>
                     </Button>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }  }} className="ml-[50%]">
                         {pages.map((page) => (
