@@ -7,7 +7,7 @@ import CarouselImageFourth from "../../Assets/HeroCarousel/CarouselImageFourth.j
 
 const ImageCarousel = () => {
     return (
-        <div className="max-h-[calc(100vh-4rem)] -z-50">
+        <div className="max-h-[calc(100vh-4rem)] -z-50 mt-16 lg:mt-16 xs:mt-14">
             <Carousel autoPlay="true" infiniteLoop="true" showArrows={true} showThumbs={false} interval={5000} showStatus={false}>
                 <div>
                     <img src={CarouselImageFirst} alt="" className="max-h-[calc(100vh-4rem)]"/>

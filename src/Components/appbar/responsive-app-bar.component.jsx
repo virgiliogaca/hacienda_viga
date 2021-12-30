@@ -20,23 +20,25 @@ const ResponsiveAppbar = () => {
       }));
 
     return(
-        <AppBar position="static" color="default">
+        <AppBar position="fixed" color="default">
             <Container maxWidth="100%">
                 <Toolbar>
-                    <Button className="w-72 left-60" href="./">
+                    <Button className="w-72 left-60 2xl:left-56 2xl:w-96 xl:w-80 xl:left-48 lg:w-60 lg:left-2 md:w-72 md:left-44 sm:left-10 xs:left-2" href="./">
                         <img src={headerIcon} alt=""></img>
                     </Button>
-                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }  }} className="ml-[50%]">
+                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }  }} className="2xl:ml-[30%] xl:ml-[20%] lg:ml-[10%]">
                         {pages.map((page) => (
                         <Button
                             key={page}
                             href={page}
-                            sx={{ my: 2, color: 'darkgoldenrod', display: 'block' }}
+                            sx={{ my: 2, color: 'darkgoldenrod', display: 'block'}}
                         >
-                            {page}
+                            <p className={"text-sm xl:text-sm lg:text-xs md:text-xs"}>
+                                {page}
+                            </p>
                         </Button>
                         ))}
-                        <ColorButton href="Reserva">
+                        <ColorButton href="Reserva" className="">
                             Reserva
                         </ColorButton>
                     </Box>

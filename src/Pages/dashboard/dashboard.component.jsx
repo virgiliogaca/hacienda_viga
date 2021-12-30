@@ -1,11 +1,9 @@
-import ImageCarousel from "../../Components/heroCarousel/hero-carousel.component"
-import ResponsiveAppbar from "../../Components/appbar/responsive-app-bar.component"
+import {HeroLayout} from "../../Components/heroLayout"
 
 const Dashboard = () => {
     return(
         <>
-            <ResponsiveAppbar />
-            <ImageCarousel />
+            <HeroLayout />
         </>
     )
 }
